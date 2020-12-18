@@ -5,7 +5,7 @@ import './App.css';
 
 const App = () => (
     <div className="App">
-        <h1>Stacy's Todo App (built with React!)</h1>
+        <h1>Stacy's Todo App <em>(built with React!)</em></h1>
         <TodoList />
     </div>
 )

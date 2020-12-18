@@ -1,8 +1,14 @@
-.new-todo-form {
+.new-todo-form,
+.list-wrapper {
     background: rgba(72, 61, 139, 0.1);
     padding: 1em;
     border-radius: 8px;
 }
+
+.list-wrapper {
+    box-shadow: 5px 5px 15px gray;
+}
+
 
 .new-todo-input {
     width: 75%;
