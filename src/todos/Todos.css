@@ -1,0 +1,24 @@
+.new-todo-form {
+    background: rgba(72, 61, 139, 0.1);
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.new-todo-input {
+    width: 75%;
+    border: none;
+    height: 1.8em;
+    font-size: 1em;
+}
+
+.new-todo-button,
+.completed-button,
+.remove-button {
+    background: rgba(72, 61, 139, 0.8);
+    color: white;
+    border: none;
+    margin-left: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 1em;
+}
