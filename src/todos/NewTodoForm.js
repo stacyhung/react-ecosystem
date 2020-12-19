@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
+import { getTodos } from './selectors';
 import { createTodo } from './actions';
 import './Todos.css'
 
@@ -29,7 +30,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
 }
 
 const mapStateToProps = state => ({
-    todos: state.todos,
+    todos: getTodos(state),
 }); // state represents redux state
 
 const mapDispatchToProps = dispatch => ({
