@@ -17,4 +17,9 @@ const persistConfig = {
 const rootReducer = combineReducers(reducers); // for createStore function
 const persistedReducer = persistReducer(persistConfig, rootReducer); // persistConfig tells us where to save and how to store app data
 
-export const configureStore = () => createStore(persistedReducer);
+export const configureStore = () =>
+    createStore(
+        persistedReducer,
+        window.__REDUX_DEVTOOLS_EXTENSION__ &&
+        window.__REDUX_DEVTOOLS_EXTENSION__()
+    );
